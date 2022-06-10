@@ -1,6 +1,6 @@
-package com.nal.qa.base;
+package com.demoqa.qa.base;
 
-import com.nal.qa.utils.ConfigReader;
+import com.demoqa.qa.utils.ConfigReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 

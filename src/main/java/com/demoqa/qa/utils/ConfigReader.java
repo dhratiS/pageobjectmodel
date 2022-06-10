@@ -1,4 +1,4 @@
-package com.nal.qa.utils;
+package com.demoqa.qa.utils;
 
 import com.fasterxml.jackson.databind.annotation.JsonAppend;
 

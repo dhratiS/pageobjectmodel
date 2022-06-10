@@ -1,4 +1,4 @@
-package com.nal.qa.base;
+package com.demoqa.qa.base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import lombok.SneakyThrows;
