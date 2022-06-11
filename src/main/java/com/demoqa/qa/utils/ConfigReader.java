@@ -10,7 +10,7 @@ public class ConfigReader {
     Properties prop;
 
     public ConfigReader() {
-        File src = new File(System.getProperty("user.dir")+ "/src/main/java/dataConfig/config.properties");
+        File src = new File(System.getProperty("user.dir")+ "/src/main/java/com/demoqa/qa/config/config.properties");
         try(FileInputStream fis = new FileInputStream(src)){
             prop = new Properties();
             prop.load(fis);

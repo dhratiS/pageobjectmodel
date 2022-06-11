@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing demo site">
+
+    <listeners>
+        <listener class-name="com.demoqa.qa.extentreport.ExtentReporter"> </listener>
+    </listeners>
+
+    <test name="Regression">
+        <classes>
+            <class name="com.demoqa.qa.test.HomePageTest"/>
+        </classes>
+    </test>
+</suite>

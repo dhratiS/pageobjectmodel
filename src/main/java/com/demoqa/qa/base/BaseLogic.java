@@ -12,15 +12,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseLogic {
 
     //This demonstrates the Singleton Pattern. Each class gets it own single threaded driver
-    private final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-    public synchronized WebDriver getDriver() {
+    public static synchronized WebDriver getDriver() {
 
         return driver.get();
     }
 
     @SneakyThrows
-    public WebDriver setDriver(String browser){
+    public static WebDriver setDriver(String browser){
         WebDriver webDriver;
         if(browser.equalsIgnoreCase("chrome")){
             WebDriverManager.chromedriver().setup();
@@ -31,7 +31,7 @@ public class BaseLogic {
             webDriver = new FirefoxDriver();
         }
         else{
-            throw new Exception("This browser " + browser + " not found");
+            throw new UnsupportedOperationException(browser+" not found");
         }
 
        driver.set(webDriver);
